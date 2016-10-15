@@ -18,7 +18,7 @@ routes.rss = require('./route/rss.js');
 
 
 app.all('*', function(req, res, next) {
-  res.set('Access-Control-Allow-Origin', 'http://192.168.1.150');
+  res.set('Access-Control-Allow-Origin', 'http://localhost');
   res.set('Access-Control-Allow-Credentials', true);
   res.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');
   res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Authorization');
